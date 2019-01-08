@@ -1,12 +1,14 @@
 import React from "react";
 
+import Meta from "./Meta";
+import Header from "./Header";
+
 class Page extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <a href="_">Menu</a>
-        </nav>
+        <Meta />
+        <Header />
         {this.props.children}
       </div>
     );
