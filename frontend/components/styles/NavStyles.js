@@ -1,14 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const NavStyles = styled.ul`
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-self: end;
   font-size: 2rem;
+  margin: 0;
+  padding: 0;
   a,
   button {
-    padding: 1rem 3rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -16,27 +15,28 @@ const NavStyles = styled.ul`
     font-weight: 900;
     font-size: 1em;
     background: none;
+    padding: 1rem 3rem;
     border: 0;
     cursor: pointer;
-    @media (max-width: 700px) {
+    @media (max-width: ${props => props.theme.mediaMaxWidthPhone}) {
       font-size: 10px;
       padding: 0 10px;
     }
     &:before {
-      content: '';
+      content: "";
       width: 2px;
-      background: ${props => props.theme.lightgrey};
+      background: ${props => props.theme.lightGrey};
       height: 100%;
-      left: 0;
       position: absolute;
       transform: skew(-20deg);
       top: 0;
       bottom: 0;
+      left: 0;
     }
     &:after {
       height: 2px;
       background: red;
-      content: '';
+      content: "";
       width: 0;
       position: absolute;
       transform: translateX(-50%);
@@ -51,16 +51,16 @@ const NavStyles = styled.ul`
       &:after {
         width: calc(100% - 60px);
       }
-    @media (max-width: 700px) {
+      @media (max-width: 700px) {
         width: calc(100% - 10px);
-    }
+      }
     }
   }
-  @media (max-width: 1300px) {
-    border-top: 1px solid ${props => props.theme.lightgrey};
-    width: 100%;
+  @media (max-width: ${props => props.theme.mediaMaxWidth720p}) {
     justify-content: center;
+    width: 100%;
     font-size: 1.5rem;
+    border-top: 1px solid ${props => props.theme.lightGrey};
   }
 `;
 

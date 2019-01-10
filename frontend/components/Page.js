@@ -12,6 +12,7 @@ const defaultTheme = {
   offWhite: "#EDEDED",
   maxWidth: "1000px",
   mediaMaxWidth720p: "1279px",
+  mediaMaxWidthPhone: "700px",
   bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)"
 };
 
