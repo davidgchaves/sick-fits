@@ -17,7 +17,7 @@ const Logo = styled.h1`
     text-transform: uppercase;
     text-decoration: none;
   }
-  @media (max-width: ${props => props.theme.mediaMaxWidth}) {
+  @media (max-width: ${props => props.theme.mediaMaxWidth720p}) {
     margin: 0;
     text-align: center;
   }
@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: stretch;
     border-bottom: 10px solid ${props => props.theme.black};
-    @media (max-width: ${props => props.theme.mediaMaxWidth}) {
+    @media (max-width: ${props => props.theme.mediaMaxWidth720p}) {
       grid-template-columns: 1fr;
       justify-content: center;
     }
